@@ -1,0 +1,12 @@
+{% extends 'layouts/_base.html' %}
+
+{% block title %}Maps{% endblock title %}
+
+
+{% block body %}
+    <div id="map" data-center-x="{{center_x}}" data-center-y="{{center_y}}" data-zoom="{{zoom}}"></div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+{% endblock body %}
+
+
